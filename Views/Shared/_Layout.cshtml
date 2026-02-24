@@ -1,0 +1,81 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link rel="stylesheet" href="~/css/output.css" asp-append-version="true" />
+    <style>
+        body {
+            font-family: 'Crimson Pro', serif;
+        }
+
+        .font-sans {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <div class="relative z-10">
+        <!-- Header -->
+        <header class="border-b border-slate-200 bg-white/80 backdrop-blur-sm">
+            <div class="mx-auto flex max-w-7xl items-center justify-between px-6 py-6">
+                <div class="flex items-center gap-3">
+                    <div class="flex h-10 w-10 items-center justify-center rounded-lg bg-blue-900">
+                        <svg class="h-6 w-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+                        </svg>
+                    </div>
+                    <span class="text-2xl font-bold tracking-tight text-blue-900">FastGuide.AI</span>
+                </div>
+                <nav class="hidden gap-8 font-sans text-sm md:flex">
+                    <a href="#features" class="text-slate-600 transition-colors hover:text-blue-900">Features</a>
+                    <a href="#how-it-works" class="text-slate-600 transition-colors hover:text-blue-900">How It Works</a>
+                    <a href="#pricing" class="text-slate-600 transition-colors hover:text-blue-900">Pricing</a>
+                </nav>
+                <div class="flex gap-3">
+                    <button class="px-4 py-2 font-sans text-sm text-slate-600 transition-colors hover:text-blue-900">Sign In</button>
+                    <button class="rounded-lg bg-amber-500 px-6 py-2 font-sans text-sm font-semibold text-white transition-all hover:bg-amber-600 hover:shadow-lg hover:shadow-amber-500/25">
+                        Get Started
+                    </button>
+                </div>
+            </div>
+        </header>
+    <div>
+        @RenderBody()
+    </div>
+        <!-- Footer -->
+        <footer class="mt-24 border-t border-slate-200 bg-white">
+            <div class="mx-auto max-w-7xl px-6 py-12">
+                <div class="mb-8 grid gap-8 md:grid-cols-4">
+                    <div>
+                        <div class="mb-4 flex items-center gap-3">
+                            <div class="flex h-8 w-8 items-center justify-center rounded-lg bg-blue-900">
+                                <svg class="h-5 w-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+                                </svg>
+                            </div>
+                            <span class="text-xl font-bold text-blue-900">FastGuide.AI</span>
+                        </div>
+                        <p class="font-sans text-sm text-slate-600">
+                            Transform <span class="font-bold text-teal-500">LONG</span> lectures into <span class="font-bold text-teal-500 italic">fast</span> study guides with <span class="font-bold text-amber-500">AI</span>
+                        </p>
+                    </div>
+
+                    <div>
+                        <h4 class="mb-4 font-bold text-blue-900">Product</h4>
+                        <ul class="space-y-2 font-sans text-sm text-slate-600">
+                            <li><a href="#features" class="transition-colors hover:text-teal-500">Features</a></li>
+                            <li><a href="#pricing" class="transition-colors hover:text-teal-500">Pricing</a></li>
+                            <li><a href="#faq" class="transition-colors hover:text-teal-500">FAQ</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="border-t border-slate-200 pt-8 text-center font-sans text-sm text-slate-500">
+                    © 2026 FastGuide.AI. Deployed on Microsoft Azure. All rights reserved.
+                </div>
+            </div>
+        </footer>
+</body>
+</html>

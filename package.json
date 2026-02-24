@@ -1,0 +1,25 @@
+{
+  "name": "lecture2guide",
+  "version": "1.0.0",
+  "description": "A web application that converts YouTube lecture videos into structured, LibreOffice-compatible study guides by extracting transcripts, organizing content with AI, linking relevant documentation, and flagging outdated information to help students review material without rewatching hours of video.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NoahLeBlanc/Lecture2Guide.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/NoahLeBlanc/Lecture2Guide/issues"
+  },
+  "homepage": "https://github.com/NoahLeBlanc/Lecture2Guide#readme",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.18",
+    "tailwindcss": "^4.1.18"
+  }
+}
