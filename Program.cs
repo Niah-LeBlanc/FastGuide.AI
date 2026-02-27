@@ -22,6 +22,13 @@ builder.Services.AddRazorPages();
 // HttpClient for your TranscriptService
 builder.Services.AddHttpClient<TranscriptService>();
 
+//Claude ai 
+builder.Services.AddHttpClient<ClaudeService>();
+builder.Services.AddHttpClient<TranscriptService>();
+
+//Converts the output to specified doc type
+builder.Services.AddSingleton<DocumentExportService>();
+
 // Identity services
 builder.Services.AddDefaultIdentity<ApplicationUser>(options =>
 {
