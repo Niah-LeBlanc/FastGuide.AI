@@ -55,4 +55,5 @@ nunit-*.xml
 
 *.vsidx
 
+*appsettings.json
 *appsettings*.json
